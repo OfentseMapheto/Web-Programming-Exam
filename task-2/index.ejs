@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Records</title>
+</head>
+<body>
+  <h1>Records:</h1>
+  <ul>
+    <% records.forEach(record => { %>
+        <li>Name: <%= record.Name %></li>
+        <li>Surname: <%= record.Surname %></li>
+        <li>Phone Number: <%= record.PhoneNumber %></li>
+        <li>Age: <%= record.Age %></li>
+        <li>Job Description: <%= record.JobDescription %></li>
+        <li>Salary: <%= record.Salary %> Rand</li>
+        <br>
+      <% }); %>
+      
+  </ul>
+  <a href="/add">Add Record</a>
+  <a href="/view/desc">View Records in Ascending Order (Surname)</a>
+  <a href="/statistics">View Salary Statistics</a>
+</body>
+</html>
